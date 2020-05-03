@@ -10,14 +10,14 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="http://example.org//img/home-bg-logo.png">
-    <meta property="twitter:image" content="http://example.org//img/home-bg-logo.png" />
+    <meta property="og:image" content="https://alexandremendoncaalvaro.github.io/blog//img/home-bg-logo.png">
+    <meta property="twitter:image" content="https://alexandremendoncaalvaro.github.io/blog//img/home-bg-logo.png" />
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Animações leves e fáceis para Web" />
+    <meta property="og:title" content="Animações leves e fáceis para Web" />
+    <meta property="twitter:title" content="Animações leves e fáceis para Web" />
     
 
     
@@ -32,22 +32,22 @@
     
 
     <meta name="keyword"  content="blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" href="/blog/img/favicon.ico">
 
-    <title>Tags-Alexandre Alvaro</title>
+    <title>Animações leves e fáceis para Web-Alexandre Alvaro</title>
 
-    <link rel="canonical" href="/tags/">
+    <link rel="canonical" href="/blog/web/hello-world/">
 
-    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+    <link rel="stylesheet" href="/blog/css/iDisqus.min.css"/>
 	
     
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
 
     
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/blog/css/hux-blog.min.css">
 
     
-    <link rel="stylesheet" href="/css/zanshang.css">
+    <link rel="stylesheet" href="/blog/css/zanshang.css">
     
     
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -57,13 +57,13 @@
 
     
     
-    <script src="/js/jquery.min.js"></script>
+    <script src="/blog/js/jquery.min.js"></script>
     
     
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/blog/js/bootstrap.min.js"></script>
     
     
-    <script src="/js/hux-blog.min.js"></script>
+    <script src="/blog/js/hux-blog.min.js"></script>
 
     
     
@@ -91,7 +91,7 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Início</a>
+                        <a href="/blog/">Início</a>
                     </li>
                     
                         
@@ -140,14 +140,31 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-logo.png')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/blog/img/web-post-1-greensock.png')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    
-                    
-		    
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Animações leves e fáceis para Web</h1>
+                    <h2 class="subheading">Utilizando javascript puro, imagens SVG e a biblioteca GreenSock</h2>
+                    <span class="meta">
+                        Postado por 
+                        
+                            Alexandre Alvaro
+                         
+                        em
+                        03 de maio de 2020
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -160,13 +177,65 @@
 <article>
     <div class="container">
         <div class="row">
+
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	
+                
+                    <header>
+                        <h4>Tópicos neste artigo</h4>
+                    </header>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introdução">Introdução</a></li>
+    <li><a href="#criando-uma-animação-básica">Criando uma animação básica</a></li>
+  </ul>
+</nav>
+                
+
+                <hr>
+
+                <h1 id="introdução">Introdução</h1>
+<p>As animações na internet se popularizaram bastante desde o surgimento do GIF e do Flash.<br>
+O formato GIF funciona de maneira similar a um vídeo, com uma sequencia de quadros que troca muito rapidamente gerando a ilusão de movimento.</p>
+<h1 id="criando-uma-animação-básica">Criando uma animação básica</h1>
+<p>A seguir vou demonstrar como criar uma animação básica utilizando os recursos da biblioteca GreenSock.</p>
+<p><strong>O vídeo é interativo! Você pode pausar a qualquer momento, mudar o que quiser no código e ver o que acontece.</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://scrimba.com/c/c2KvV4tN"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="scrimba code"></iframe>
+</div>
+<p>*<a href="https://www.youtube.com/watch?v=02rvd_7HcFY">Clique aqui</a> para ver uma excelente explicação sobre CDN.</p>
+<div id="idyllElement">
+</div>
+<script src="/js/idyll-embed.min.js"></script>
+<script>
+    var element = document.createElement('div');
+    document.querySelector("#idyllElement").appendChild(element);
+
+    var idyllMarkup = `
+        # Idyll
+
+        [var name:"x" value:5 /]
+
+        The value of x is [Display value:x format:"d" /].
+
+        [Range value:x min:0 max:10 /]
+    `;
+
+    Idyll.render(idyllMarkup, element);
+</script>
+
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                </ul>
+
                 
 <div id="disqus-comment"></div>
 
@@ -196,7 +265,7 @@
             </div>
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
@@ -229,7 +298,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/tags/index.xml' rel="alternate" type="application/rss+xml" title="inteligência das coisas" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="inteligência das coisas" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

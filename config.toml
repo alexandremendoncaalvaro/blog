@@ -1,9 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://alexandremendoncaalvaro.github.io/blog/"
 title = "inteligência das coisas"
 theme =  "cleanwhite"
 languageCode = "pt-br"
 preserveTaxonomyNames = true
 disqusShortname = "alexandremendonalvaro"
+publishDir = "docs"
 
 [outputs]
     home = ["HTML", "RSS"]
