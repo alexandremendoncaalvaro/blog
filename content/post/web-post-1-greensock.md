@@ -4,7 +4,7 @@ title:          "Animações leves e fáceis para Web"
 subtitle:       "Utilizando javascript puro, imagens SVG e a biblioteca GreenSock"
 postdate:       "03 de maio de 2020"
 author:         "Alexandre Alvaro"
-URL:            "/web/hello-world/"
+URL:            "/web/001/"
 image:          "img/web-post-1-greensock.png"
 ---
 
@@ -22,3 +22,8 @@ A seguir vou demonstrar como criar uma animação básica utilizando os recursos
 *[Clique aqui](https://www.youtube.com/watch?v=02rvd_7HcFY) para ver uma excelente explicação sobre CDN.
 
 {{< idyll >}}
+    # Teste com Idyll
+    [var name:"x" value:5 /]
+    O valor de x é [Display value:x format:"d" /].
+    [Range value:x min:0 max:10 /]
+{{< /idyll >}}

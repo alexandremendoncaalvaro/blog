@@ -1,19 +1,10 @@
-<div id="idyllElement">
-</div>
-<script src="/js/idyll-embed.min.js"></script>
+<div id="idyllElement"></div>
+<script src="/blog/js/idyll-embed.min.js"></script>
 <script>
     var element = document.createElement('div');
     document.querySelector("#idyllElement").appendChild(element);
 
-    var idyllMarkup = `
-        # Idyll
-
-        [var name:"x" value:5 /]
-
-        The value of x is [Display value:x format:"d" /].
-
-        [Range value:x min:0 max:10 /]
-    `;
+    var idyllMarkup = {{.Inner}};
 
     Idyll.render(idyllMarkup, element);
 </script>
