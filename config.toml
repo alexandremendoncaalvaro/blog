@@ -1,0 +1,47 @@
+baseURL = "http://example.org/"
+title = "inteligência das coisas"
+theme =  "cleanwhite"
+languageCode = "pt-br"
+preserveTaxonomyNames = true
+disqusShortname = "alexandremendonalvaro"
+
+[outputs]
+    home = ["HTML", "RSS"]
+
+[params]
+    header_image = "img/home-bg-logo.png"
+    SEOTitle = "Alexandre Alvaro"
+    description = "Pesquisador na HBSIS Ambev em Internet das Coisas e Automação Industrial"
+    keyword = "blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics"
+    slogan = "o blog"
+
+    image_404 = "img/404-bg.jpg"
+    title_404 = "Página não encontrada :("
+    omit_categories = false
+
+    # Sidebar settings
+    sidebar_about_description = "Pesquisador, Maker, Desenvolvedor, Ilustrador, Violeiro, Entusiasta Open Source e apaixonado por aprender e compartilhar."
+    sidebar_avatar = "img/alexandrealvaro.png"
+    featured_tags = true 
+    featured_condition_size = 1 
+    #custom_js = ["js/idyll-embed.min.js"]
+    
+    about_me = true
+
+
+[params.social]
+    rss            = true 
+    email          = "youremail@gmail.com"
+    facebook      = "full profile url in facebook"
+    linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
+
+[[params.addtional_menus]]
+    title =  "Alexandre Alvaro"
+    href =  "https://alexandremendoncaalvaro.github.io/"
+
+[markup]
+    [markup.tableOfContents]
+        endLevel = 2
+        startLevel = 1
+    [markup.highlight]
+        style = "dracula"
