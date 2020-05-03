@@ -3,7 +3,7 @@ title = "inteligência das coisas"
 theme =  "cleanwhite"
 languageCode = "pt-br"
 preserveTaxonomyNames = true
-disqusShortname = "alexandremendonalvaro"
+disqusShortname = "inteligenciadascoisas"
 publishDir = "docs"
 
 [outputs]
