@@ -31,10 +31,16 @@ publishDir = "docs"
 
 
 [params.social]
-    rss            = true 
-    email          = "youremail@gmail.com"
-    facebook      = "full profile url in facebook"
-    linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
+    rss             = true 
+    email           = "alexandre.alvaro@hotmail.com"
+    facebook        = "https://www.facebook.com/peritto"
+    linkedin        = "https://www.linkedin.com/in/alexandre-mendon%C3%A7a-%C3%A1lvaro-273b0050"
+    github          = "https://github.com/alexandremendoncaalvaro"
+    instagram       = "https://www.instagram.com/alemendalvaro"
+    deviantart      = "https://www.deviantart.com/peritto/gallery"
+    soundcloud      = "https://soundcloud.com/peritto-1"
+    whatsapp        = "https://api.whatsapp.com/send?phone=5547991512508&amp;text=Site"
+
 
 [[params.addtional_menus]]
     title =  "Alexandre Alvaro"

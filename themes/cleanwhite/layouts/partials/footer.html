@@ -197,7 +197,37 @@
                     </span>
                 </a>
             </li>
-    {{ end }}
+            {{ end }}
+            {{ with .Site.Params.social.deviantart }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.soundcloud }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.whatsapp }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
                 </ul>
 		<p class="copyright text-muted">
                     Copyright &copy; {{ .Site.Title }} {{ now.Year }}
