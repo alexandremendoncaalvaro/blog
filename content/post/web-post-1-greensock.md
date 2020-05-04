@@ -50,6 +50,10 @@ Mova os pontos azuis abaixo (ancoras) para entender melhor como as curvas são c
     <iframe width="100%" height="400" src="https://two.js.org/examples/advanced-anchors.html" frameborder="0"></iframe>
 {{< /rawhtml >}}
 
+## SVG
+Scalable Vector Graphics que pode ser traduzido do inglês como gráficos vetoriais escalonáveis. Trata-se de uma linguagem XML para descrever de forma vetorial desenhos e gráficos bidimensionais, quer de forma estática, quer dinâmica ou animada.  
+No vídeo interativo: [Criando uma animação com Greensock](#criando-uma-animação-com-greensock) eu demonstro como criar um SVG básico com algumas linhas de código.
+
 # Principais recursos de animação para web
 ## Flash (atual Adobe Animate)
 Por muito tempo o plugin do Flash era essencial para acessar diversas páginas. Porém, por conter falhas de segurança ele foi sendo evitado e hoje a Adobe já permite exportar as animações para um Canvas HTML5.  
@@ -96,9 +100,6 @@ Um pack de duas ferramentas incríveis de animação, recentemente unificada, qu
         <video class="playvideo" width="48%" height="100%" loop playsinline autoplay muted style="border-radius: 10px; " src="https://cdn.2dimensions.com/features/vertex.mp4"></video>
         <video class="playvideo" width="48%" height="100%" loop playsinline autoplay muted style="border-radius: 10px;" src="https://cdn.2dimensions.com/features/skeletal_flar4.mp4" type="video/mp4"></video>
     </div>
-    <!-- <script>
-        document.querySelectorAll('.playvideo').play();
-    </script> -->
 {{< /rawhtml >}}
 
 
