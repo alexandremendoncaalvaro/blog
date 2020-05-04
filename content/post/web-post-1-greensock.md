@@ -8,12 +8,12 @@ author:         "Alexandre Alvaro"
 image:          "img/web-post-001/web-post-1-greensock.jpg"
 thumbnail:      "img/web-post-001/web-post-1-greensock.jpg"
 tags:
-    - Web
-    - Animações
-    - SVG
-    - Javascript
-    - Greensock
-    - Interativo
+    - web
+    - animações
+    - svg
+    - javascript
+    - greensock
+    - interativo
 categories: [ Web ]
 ---
 
@@ -67,7 +67,7 @@ No vídeo interativo: [Criando uma animação com Greensock](#criando-uma-anima�
 ## Flash (atual Adobe Animate)
 Por muito tempo o plugin do Flash era essencial para acessar diversas páginas. Porém, por conter falhas de segurança ele foi sendo evitado e hoje a Adobe já permite exportar as animações para um Canvas HTML5.  
 Por conter um aplicativo com interface gráfica muito eficiente, é excelente para fazer animações, principalmente para uso com uma mesa digitalizadora e renderizando como vídeos, mas ainda não é minha opção preferida para rodar direto na web.  
-Dá só uma relebrada nesta clássica animação sobre o Flash feita inteiramente no Flash em 2006:
+Dá só uma relembrada nesta clássica animação sobre o Flash feita inteiramente no Flash em 2006:
 {{< rawhtml >}}
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb1VvUf21L4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {{< /rawhtml >}}
@@ -92,8 +92,8 @@ Dá uma olhada no que esse brasileiro faz com CSS3 Puro:
 {{< /rawhtml >}}
 
 
-## javascript Request animation frame
-Outra opção nativa e utilizada de base por diversas bilbiotecas javascript.  
+## Javascript request animation frame
+Outra opção nativa e utilizada de base por diversas bibliotecas javascript.  
 Com gerenciamento de recursos adaptável ao dispositivo que está sendo utilizado, torna-se uma ótima opção, porém é muito mais fácil de implementar quando usado como recurso uma biblioteca.
 
 ## Lottie (Bodymovin’)
@@ -122,7 +122,7 @@ Porém, além de ser bastante recente e não ter muito suporte, é bem mais limi
 https://greensock.com/  
 Green Sock Animation Platform, é esta maravilhosa biblioteca javascript que facilita bastante a animação para web.  
 Leve, modular, fácil de ler, segura e bastante robusta. E Além de tudo isso, escolhi adotar como padrão para os meus projetos pela qualidade da documentação oficial e a comunidade bastante ativa.  
-Você encontra facilmente respostas bem estruturadas em foruns, exemplos, tutoriais, vídeos e muito material bacana.  
+Você encontra facilmente respostas bem estruturadas em fóruns, exemplos, tutoriais, vídeos e muito material bacana.  
 Olha por exemplo esta ferramenta pra te auxiliar a criar as curvas de movimentação (eases):  
 https://greensock.com/ease-visualizer
 
@@ -144,7 +144,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
 Live demo:
 https://alexandremendoncaalvaro.github.io/Alfred  
-*Pode usar qualquer valor no usuario e senha.
+*Pode usar qualquer valor no usuário e senha.
 
 {{< rawhtml >}}
     <iframe width="560" height="315" src="https://www.youtube.com/embed/9q9Jo4uhZhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
