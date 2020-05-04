@@ -61,8 +61,11 @@ Dá só uma relebrada nesta clássica animação sobre o Flash feita inteirament
 
 ## HTML5 Canvas
 O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.  
-Tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).  
-Geralmente o carregamento e até a execução ficam um pouco pesados. 
+Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).  
+Geralmente o carregamento e até a execução ficam um pouco pesados.  
+{{< rawhtml >}}
+    <iframe width="100%" height="600" src="http://www.effectgames.com/demos/canvascycle/" frameborder="0"></iframe>
+{{< /rawhtml >}}
 
 ### Three.js
 Esta biblioteca JS vale ser citada! Ela permite fazer coisas inacreditáveis em conjunto com o WebGL e HTML5 Canvas.  
@@ -91,9 +94,12 @@ https://rive.app/
 Um pack de duas ferramentas incríveis de animação, recentemente unificada, que utliza o canvas como base e permite criar animações interativas e com recursos bem interessantes, como a deformação de meshes e esqueletos.
 {{< rawhtml >}}
     <div style="display: inline-block;">
-        <video width="48%" height="100%" loop playsinline autoplay style="border-radius: 10px; " src="https://cdn.2dimensions.com/features/vertex.mp4"></video>
-        <video width="48%" height="100%" loop playsinline autoplay style="border-radius: 10px;" src="https://cdn.2dimensions.com/features/skeletal_flar4.mp4" type="video/mp4"></video>
+        <video class="playvideo" width="48%" height="100%" loop playsinline autoplay muted style="border-radius: 10px; " src="https://cdn.2dimensions.com/features/vertex.mp4"></video>
+        <video class="playvideo" width="48%" height="100%" loop playsinline autoplay muted style="border-radius: 10px;" src="https://cdn.2dimensions.com/features/skeletal_flar4.mp4" type="video/mp4"></video>
     </div>
+    <script>
+        document.querySelectorAll('.playvideo').play();
+    </script>
 {{< /rawhtml >}}
 
 
@@ -104,7 +110,7 @@ Trata-se de um recurso javascript nativo que permite fazer sequencias complexas 
 Porém, além de ser bastante recente e não ter muito suporte, é bem mais limitado do que a biblioteca GASP.
 
 ## GSAP
-https://greensock.com/
+https://greensock.com/  
 Green Sock Animation Platform, é esta maravilhosa biblioteca javascript que facilita bastante a animação para web.  
 Leve, modular, fácil de ler, segura e bastante robusta. E Além de tudo isso, escolhi adotar como padrão para os meus projetos pela qualidade da documentação oficial e a comunidade bastante ativa.  
 Você encontra facilmente respostas bem estruturadas em foruns, exemplos, tutoriais, vídeos e muito material bacana.  

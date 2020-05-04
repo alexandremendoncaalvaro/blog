@@ -261,8 +261,12 @@ Dá só uma relebrada nesta clássica animação sobre o Flash feita inteirament
 </p>
 <h2 id="html5-canvas">HTML5 Canvas</h2>
 <p>O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.<br>
-Tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).<br>
-Geralmente o carregamento e até a execução ficam um pouco pesados.</p>
+Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).<br>
+Geralmente o carregamento e até a execução ficam um pouco pesados.<br>
+
+
+    <iframe width="100%" height="600" src="http://www.effectgames.com/demos/canvascycle/" frameborder="0"></iframe>
+</p>
 <h3 id="threejs">Three.js</h3>
 <p>Esta biblioteca JS vale ser citada! Ela permite fazer coisas inacreditáveis em conjunto com o WebGL e HTML5 Canvas.<br>
 Dá uma conferida nos exemplos: <a href="https://threejs.org/examples/">https://threejs.org/examples/</a></p>
@@ -287,16 +291,19 @@ Um pack de duas ferramentas incríveis de animação, recentemente unificada, qu
 
 
     <div style="display: inline-block;">
-        <video width="48%" height="100%" loop playsinline autoplay style="border-radius: 10px; " src="https://cdn.2dimensions.com/features/vertex.mp4"></video>
-        <video width="48%" height="100%" loop playsinline autoplay style="border-radius: 10px;" src="https://cdn.2dimensions.com/features/skeletal_flar4.mp4" type="video/mp4"></video>
+        <video class="playvideo" width="48%" height="100%" loop playsinline autoplay muted style="border-radius: 10px; " src="https://cdn.2dimensions.com/features/vertex.mp4"></video>
+        <video class="playvideo" width="48%" height="100%" loop playsinline autoplay muted style="border-radius: 10px;" src="https://cdn.2dimensions.com/features/skeletal_flar4.mp4" type="video/mp4"></video>
     </div>
+    <script>
+        document.querySelectorAll('.playvideo').play();
+    </script>
 </p>
 <p>A melhor opção que conheço para exportar animações para apps com Flutter.</p>
 <h2 id="web-animations-api">Web Animations API</h2>
 <p>Trata-se de um recurso javascript nativo que permite fazer sequencias complexas de animação sem precisar carregar nenhum script externo.<br>
 Porém, além de ser bastante recente e não ter muito suporte, é bem mais limitado do que a biblioteca GASP.</p>
 <h2 id="gsap">GSAP</h2>
-<p><a href="https://greensock.com/">https://greensock.com/</a>
+<p><a href="https://greensock.com/">https://greensock.com/</a><br>
 Green Sock Animation Platform, é esta maravilhosa biblioteca javascript que facilita bastante a animação para web.<br>
 Leve, modular, fácil de ler, segura e bastante robusta. E Além de tudo isso, escolhi adotar como padrão para os meus projetos pela qualidade da documentação oficial e a comunidade bastante ativa.<br>
 Você encontra facilmente respostas bem estruturadas em foruns, exemplos, tutoriais, vídeos e muito material bacana.</p>
