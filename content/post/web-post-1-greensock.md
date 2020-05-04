@@ -62,10 +62,9 @@ Dá só uma relebrada nesta clássica animação sobre o Flash feita inteirament
 ## HTML5 Canvas
 O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.  
 Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).  
-Geralmente o carregamento e até a execução ficam um pouco pesados.  
-{{< rawhtml >}}
-    <iframe width="100%" height="600" src="http://www.effectgames.com/demos/canvascycle/" frameborder="0"></iframe>
-{{< /rawhtml >}}
+Geralmente o carregamento e até a execução ficam um pouco pesados. 
+Até por isso resolvi não incorporar os exemplos diretamente ao artigo.  
+Dá uma conferida em alguns bem legais neste link: https://www.webfx.com/blog/web-design/examples-html5-canvas/
 
 ### Three.js
 Esta biblioteca JS vale ser citada! Ela permite fazer coisas inacreditáveis em conjunto com o WebGL e HTML5 Canvas.  
