@@ -6,6 +6,7 @@ postdate:       "03 de maio de 2020"
 author:         "Alexandre Alvaro"
 # URL:            "/web/001/"
 image:          "img/web-post-001/web-post-1-greensock.jpg"
+thumbnail:      "img/web-post-001/web-post-1-greensock.jpg"
 tags:
     - Web
     - Animações
