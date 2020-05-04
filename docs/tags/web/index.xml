@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on inteligência das coisas</title>
+    <link>https://alexandremendoncaalvaro.github.io/blog/tags/web/</link>
+    <description>Recent content in Web on inteligência das coisas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+	<atom:link href="https://alexandremendoncaalvaro.github.io/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Animações leves e fáceis para Web</title>
+      <link>https://alexandremendoncaalvaro.github.io/blog/web/001/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandremendoncaalvaro.github.io/blog/web/001/</guid>
+      <description>Introdução Opa! Tudo belezinha?
+Este é um artigo bem interativo. Fique de olho em cada detalhe para aprender fazendo seus próprios testes! 😄
+GIF As animações na internet se popularizaram bastante desde o surgimento dos GIFs animados.
+O GIF é um formato de arquivo que funciona de maneira similar a um vídeo, com uma sequencia de quadros que troca muito rapidamente gerando a ilusão de movimento.
+Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 cores, o que deixa o arquivo leve, porém bastante limitado.</description>
+    </item>
+    
+  </channel>
+</rss>
