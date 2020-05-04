@@ -8,7 +8,7 @@ publishDir = "docs"
 enableEmoji = true
 
 [outputs]
-    home = ["HTML", "RSS"]
+    home = ["HTML"]
 
 [params]
     header_image = "img/home-bg-logo.png"
@@ -22,7 +22,7 @@ enableEmoji = true
     omit_categories = false
 
     # Sidebar settings
-    sidebar_about_description = "Pesquisador, Maker, Desenvolvedor, Ilustrador, Violeiro, Entusiasta Open Source e apaixonado por aprender e compartilhar."
+    sidebar_about_description = "Pesquisador na HBSIS Ambev, Maker, Desenvolvedor, Ilustrador, Violeiro, Entusiasta Open Source e apaixonado por aprender e compartilhar."
     sidebar_avatar = "img/alexandrealvaro.png"
     featured_tags = true 
     featured_condition_size = 1 
@@ -32,7 +32,7 @@ enableEmoji = true
 
 
 [params.social]
-    rss             = true 
+    rss             = false 
     email           = "alexandre.alvaro@hotmail.com"
     facebook        = "https://www.facebook.com/peritto"
     linkedin        = "https://www.linkedin.com/in/alexandre-mendon%C3%A7a-%C3%A1lvaro-273b0050"
