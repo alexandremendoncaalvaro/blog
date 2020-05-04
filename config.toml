@@ -15,7 +15,9 @@ enableEmoji = true
     SEOTitle = "inteligência das coisas"
     description = "Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos."
     keyword = "blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics"
-    slogan = "o blog"
+    slogan = "blog de tecnologia aplicada"
+
+    logo_svg = "img/logo-idc.svg"
 
     image_404 = "img/404-bg.jpg"
     title_404 = "Página não encontrada :("
