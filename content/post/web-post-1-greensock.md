@@ -13,6 +13,7 @@ tags:
     - Javascript
     - Greensock
     - Interativo
+categories: [ Web ]
 ---
 
 # Introdução

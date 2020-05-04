@@ -24,7 +24,7 @@ enableEmoji = true
     # Sidebar settings
     sidebar_about_description = "Pesquisador na HBSIS Ambev, Maker, Desenvolvedor, Ilustrador, Violeiro, Entusiasta Open Source e apaixonado por aprender e compartilhar."
     sidebar_avatar = "img/alexandrealvaro.png"
-    featured_tags = true 
+    featured_tags = true
     featured_condition_size = 1 
     #custom_js = ["js/idyll-embed.min.js"]
     
