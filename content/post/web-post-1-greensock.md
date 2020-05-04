@@ -113,6 +113,8 @@ https://greensock.com/
 Green Sock Animation Platform, é esta maravilhosa biblioteca javascript que facilita bastante a animação para web.  
 Leve, modular, fácil de ler, segura e bastante robusta. E Além de tudo isso, escolhi adotar como padrão para os meus projetos pela qualidade da documentação oficial e a comunidade bastante ativa.  
 Você encontra facilmente respostas bem estruturadas em foruns, exemplos, tutoriais, vídeos e muito material bacana.  
+Olha por exemplo esta ferramenta pra te auxiliar a criar as curvas de movimentação (eases):  
+https://greensock.com/ease-visualizer
 
 # Criando uma animação com Greensock
 A seguir vou demonstrar como criar uma animação básica utilizando os recursos da biblioteca GreenSock.
