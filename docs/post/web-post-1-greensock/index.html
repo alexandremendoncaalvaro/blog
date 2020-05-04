@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="Pesquisador na HBSIS Ambev em Internet das Coisas e Automação Industrial">
-    <meta property="og:description" content="Pesquisador na HBSIS Ambev em Internet das Coisas e Automação Industrial" />
-    <meta property="twitter:description" content="Pesquisador na HBSIS Ambev em Internet das Coisas e Automação Industrial" />
+    <meta name="description" content="Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos.">
+    <meta property="og:description" content="Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos." />
+    <meta property="twitter:description" content="Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos." />
     
 
     
@@ -34,7 +34,7 @@
     <meta name="keyword"  content="blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics">
     <link rel="shortcut icon" href="/blog/img/favicon.ico">
 
-    <title>Animações leves e fáceis para Web-Alexandre Alvaro</title>
+    <title>Animações leves e fáceis para Web-inteligência das coisas</title>
 
     <link rel="canonical" href="/blog/blog/post/web-post-1-greensock/">
 
@@ -100,14 +100,10 @@
                     </li>
                     
                         
-                        <li>
-                            <a href="/blog/categories/web">web</a>
-                        </li>
-                        
                     
                     
 		    
-                        <li><a href="https://alexandremendoncaalvaro.github.io/">Alexandre Alvaro</a></li>
+                        <li><a href="https://alexandremendoncaalvaro.github.io/">sobre o autor</a></li>
                     
 
                     
@@ -166,6 +162,14 @@
                             web
                         </a>
                         
+                        <a class="tag" href="/blog/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        <a class="tag" href="/blog/tags/iniciante" title="iniciante">
+                            iniciante
+                        </a>
+                        
                         <a class="tag" href="/blog/tags/anima%C3%A7%C3%B5es" title="animações">
                             animações
                         </a>
@@ -195,7 +199,7 @@
                         Alexandre Alvaro
                         
                         em
-                        03 de maio de 2020
+                        04 de maio de 2020
                         
                     </span>
                 </div>
@@ -242,7 +246,7 @@
         <li><a href="#gsap">GSAP</a></li>
       </ul>
     </li>
-    <li><a href="#criando-uma-animação-com-greensock">Criando uma animação com Greensock</a></li>
+    <li><a href="#tutorial-do-greensock-na-prática">Tutorial do Greensock na prática</a></li>
     <li><a href="#considerações-finais">Considerações finais</a></li>
   </ul>
 </nav>
@@ -281,7 +285,7 @@ Mova a barra abaixo das imagens para ver o resultado:
 
 <h2 id="svg">SVG</h2>
 <p>Scalable Vector Graphics que pode ser traduzido do inglês como gráficos vetoriais escalonáveis. Trata-se de uma linguagem XML para descrever de forma vetorial desenhos e gráficos bidimensionais, quer de forma estática, quer dinâmica ou animada.<br>
-No vídeo interativo: <a href="#criando-uma-anima%C3%A7%C3%A3o-com-greensock">Criando uma animação com Greensock</a> eu demonstro como criar um SVG básico com algumas linhas de código.</p>
+No vídeo interativo: <a href="#criando-uma-anima%C3%A7%C3%A3o-com-greensock">Criando uma animação com Greensock</a> eu demonstro como criar um <a href="https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773">SVG</a> básico com algumas linhas de código.</p>
 <h1 id="principais-recursos-de-animação-para-web">Principais recursos de animação para web</h1>
 <h2 id="flash-atual-adobe-animate">Flash (atual Adobe Animate)</h2>
 <p>Por muito tempo o plugin do Flash era essencial para acessar diversas páginas. Porém, por conter falhas de segurança ele foi sendo evitado e hoje a Adobe já permite exportar as animações para um Canvas HTML5.<br>
@@ -293,7 +297,7 @@ Dá só uma relembrada nesta clássica animação sobre o Flash feita inteiramen
 </p>
 <h2 id="html5-canvas">HTML5 Canvas</h2>
 <p>O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.<br>
-Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).<br>
+Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (<a href="https://tableless.com.br/entendendo-o-dom-document-object-model/">DOM</a>).<br>
 Geralmente o carregamento e até a execução ficam um pouco pesados. 
 Até por isso resolvi não incorporar os exemplos diretamente ao artigo.<br>
 Dá uma conferida em alguns bem legais neste link: <a href="https://www.webfx.com/blog/web-design/examples-html5-canvas/">https://www.webfx.com/blog/web-design/examples-html5-canvas/</a></p>
@@ -336,8 +340,8 @@ Leve, modular, fácil de ler, segura e bastante robusta. E Além de tudo isso, e
 Você encontra facilmente respostas bem estruturadas em fóruns, exemplos, tutoriais, vídeos e muito material bacana.<br>
 Olha por exemplo esta ferramenta pra te auxiliar a criar as curvas de movimentação (eases):<br>
 <a href="https://greensock.com/ease-visualizer">https://greensock.com/ease-visualizer</a></p>
-<h1 id="criando-uma-animação-com-greensock">Criando uma animação com Greensock</h1>
-<p>A seguir vou demonstrar como criar uma animação básica utilizando os recursos da biblioteca GreenSock.</p>
+<h1 id="tutorial-do-greensock-na-prática">Tutorial do Greensock na prática</h1>
+<p>A seguir vou demonstrar como criar uma animação básica de elementos <a href="https://tableless.com.br/entendendo-o-dom-document-object-model/">DOM</a> e imagens <a href="https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773">SVG</a> utilizando os recursos da biblioteca GreenSock.</p>
 <p><strong>O vídeo é interativo! Você pode pausar a qualquer momento, mudar o que quiser no código e ver o que acontece.</strong></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
     <iframe src="https://scrimba.com/c/c2KvV4tN"
@@ -347,11 +351,13 @@ Olha por exemplo esta ferramenta pra te auxiliar a criar as curvas de movimenta�
 <h1 id="considerações-finais">Considerações finais</h1>
 <p>Não existe uma unica ferramenta certa para tudo, mas pode ter certeza que pra animações interativas na web, a GASP é facilmente a minha favorita.<br>
 Espero que tenha gostado do conteúdo e interatividade deste artigo! 😊</p>
-<p>Dá uma conferida nesta interface que desenhei para uma aplicação interna para gestão e validação dos scripts SQL na base de teste do nosso time de desenvolvimento.<br>
-Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em conjunto com o meu amigo William Silva.</p>
-<p>Live demo:
+<p>Dá uma conferida nesta interface que desenhei com <a href="https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773">SVG</a>s feitos no Adobe Illustrator, animados com Greensock para uma aplicação interna para gestão e validação dos scripts SQL na base de teste do nosso time de desenvolvimento.<br>
+Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em conjunto com o meu amigo <a href="https://github.com/Wyulliam">William Silva</a>.</p>
+<p>Demonstração da interatividade:<br>
 <a href="https://alexandremendoncaalvaro.github.io/Alfred">https://alexandremendoncaalvaro.github.io/Alfred</a><br>
 *Pode usar qualquer valor no usuário e senha.</p>
+<p>Código fonte completo do Front End disponível em Open Source:<br>
+<a href="https://github.com/alexandremendoncaalvaro/Alfred">https://github.com/alexandremendoncaalvaro/Alfred</a></p>
 
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/9q9Jo4uhZhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -373,7 +379,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     </li>
                     <li>
                         <a href="javascript:;" 
-                        onclick="window.open('http://twitter.com/share?text=Animações leves e fáceis para Web - Utilizando javascript puro, imagens SVG e a biblioteca GreenSock&url=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/&hashtags=[web animações svg javascript greensock interativo]');">
+                        onclick="window.open('http://twitter.com/share?text=Animações leves e fáceis para Web - Utilizando javascript puro, imagens SVG e a biblioteca GreenSock&url=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/&hashtags=[web tutorial iniciante animações svg javascript greensock interativo]');">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -459,6 +465,10 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                         
                         
                         
+                        
+                        
+                        
+                        
                     </div>
                 </section>
                 
@@ -473,12 +483,20 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
 
 
+<hr>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div style="text-align: center;">
+                        <img height="200px" src="/blog/img/mascot-2.gif" alt="ia" />
+                    </div>
+                
+                <h3 class="copyright text-muted">Tá empolgado? Não consegue dormir? Aproveita pra dar uma conferida nas minhas redes sociais:</h3>
+                <br>
                 <ul class="list-inline text-center">
-                   
+                    
                     
                     <li>
                         <a href="mailto:alexandre.alvaro@hotmail.com">
@@ -488,8 +506,8 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                             </span>
                         </a>
                     </li>
-		    
                     
+
                     
                     
                     
@@ -503,9 +521,9 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                             </span>
                         </a>
                     </li>
-		    
+                    
 
-		    
+                    
                     
                     
                     <li>
@@ -516,7 +534,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     
                     
@@ -528,63 +546,63 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                             </span>
                         </a>
                     </li>
-		    
                     
                     
                     
                     
                     
-            
-            
-            <li>
-                <a target="_blank" href="https://www.instagram.com/alemendalvaro">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </li>
-            
-            
-            
-               <li>
-                   <a target="_blank" href="https://www.deviantart.com/peritto/gallery">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://soundcloud.com/peritto-1">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://api.whatsapp.com/send?phone=5547991512508&amp;amp;text=Site">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/alemendalvaro">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.deviantart.com/peritto/gallery">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://soundcloud.com/peritto-1">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5547991512508&amp;amp;text=Site">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
                 </ul>
-		<p class="copyright text-muted">
+                <p class="copyright text-muted">
                     Copyright &copy; inteligência das coisas 2020
                     <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a
+                        href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true">
                     </iframe>
                 </p>
             </div>
@@ -597,12 +615,12 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
 <script>
     function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
     }
 </script>
 
@@ -613,11 +631,11 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
 <script>
     
-    if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+    if ($('#tag_cloud').length !== 0) {
+        async("/js/jquery.tagcloud.js", function () {
             $.fn.tagcloud.defaults = {
                 
-                color: {start: '#bbbbee', end: '#0085a1'},
+                color: { start: '#bbbbee', end: '#0085a1' },
             };
             $('#tag_cloud a').tagcloud();
         })
@@ -626,12 +644,11 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
 
 <script>
-    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function () {
         var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
+        if ($nav) FastClick.attach($nav);
     })
 </script>
-
 
 
 

@@ -2,19 +2,20 @@
 layout:         post 
 title:          "Animações leves e fáceis para Web"
 subtitle:       "Utilizando javascript puro, imagens SVG e a biblioteca GreenSock"
-postdate:       "03 de maio de 2020"
+postdate:       "04 de maio de 2020"
 author:         "Alexandre Alvaro"
 # URL:            "/web/001/"
 image:          "img/web-post-001/web-post-1-greensock.jpg"
 thumbnail:      "img/web-post-001/web-post-1-greensock.jpg"
 tags:
     - web
+    - tutorial
+    - iniciante
     - animações
     - svg
     - javascript
     - greensock
     - interativo
-categories: [ Web ]
 ---
 
 # Introdução
@@ -61,7 +62,7 @@ Mova os pontos azuis abaixo (ancoras) para entender melhor como as curvas são c
 
 ## SVG
 Scalable Vector Graphics que pode ser traduzido do inglês como gráficos vetoriais escalonáveis. Trata-se de uma linguagem XML para descrever de forma vetorial desenhos e gráficos bidimensionais, quer de forma estática, quer dinâmica ou animada.  
-No vídeo interativo: [Criando uma animação com Greensock](#criando-uma-animação-com-greensock) eu demonstro como criar um SVG básico com algumas linhas de código.
+No vídeo interativo: [Criando uma animação com Greensock](#criando-uma-animação-com-greensock) eu demonstro como criar um [SVG](https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773) básico com algumas linhas de código.
 
 # Principais recursos de animação para web
 ## Flash (atual Adobe Animate)
@@ -74,7 +75,7 @@ Dá só uma relembrada nesta clássica animação sobre o Flash feita inteiramen
 
 ## HTML5 Canvas
 O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.  
-Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).  
+Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página ([DOM](https://tableless.com.br/entendendo-o-dom-document-object-model/)).  
 Geralmente o carregamento e até a execução ficam um pouco pesados. 
 Até por isso resolvi não incorporar os exemplos diretamente ao artigo.  
 Dá uma conferida em alguns bem legais neste link: https://www.webfx.com/blog/web-design/examples-html5-canvas/
@@ -126,8 +127,8 @@ Você encontra facilmente respostas bem estruturadas em fóruns, exemplos, tutor
 Olha por exemplo esta ferramenta pra te auxiliar a criar as curvas de movimentação (eases):  
 https://greensock.com/ease-visualizer
 
-# Criando uma animação com Greensock
-A seguir vou demonstrar como criar uma animação básica utilizando os recursos da biblioteca GreenSock.
+# Tutorial do Greensock na prática
+A seguir vou demonstrar como criar uma animação básica de elementos [DOM](https://tableless.com.br/entendendo-o-dom-document-object-model/) e imagens [SVG](https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773) utilizando os recursos da biblioteca GreenSock.
 
 **O vídeo é interativo! Você pode pausar a qualquer momento, mudar o que quiser no código e ver o que acontece.**
 
@@ -139,12 +140,15 @@ A seguir vou demonstrar como criar uma animação básica utilizando os recursos
 Não existe uma unica ferramenta certa para tudo, mas pode ter certeza que pra animações interativas na web, a GASP é facilmente a minha favorita.  
 Espero que tenha gostado do conteúdo e interatividade deste artigo! :blush:
 
-Dá uma conferida nesta interface que desenhei para uma aplicação interna para gestão e validação dos scripts SQL na base de teste do nosso time de desenvolvimento.  
-Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em conjunto com o meu amigo William Silva.  
+Dá uma conferida nesta interface que desenhei com [SVG](https://www.devmedia.com.br/entendendo-e-usando-o-svg/19773)s feitos no Adobe Illustrator, animados com Greensock para uma aplicação interna para gestão e validação dos scripts SQL na base de teste do nosso time de desenvolvimento.  
+Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em conjunto com o meu amigo [William Silva](https://github.com/Wyulliam).  
 
-Live demo:
+Demonstração da interatividade:  
 https://alexandremendoncaalvaro.github.io/Alfred  
-*Pode usar qualquer valor no usuário e senha.
+*Pode usar qualquer valor no usuário e senha.  
+
+Código fonte completo do Front End disponível em Open Source:  
+https://github.com/alexandremendoncaalvaro/Alfred
 
 {{< rawhtml >}}
     <iframe width="560" height="315" src="https://www.youtube.com/embed/9q9Jo4uhZhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

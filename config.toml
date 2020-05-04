@@ -12,8 +12,8 @@ enableEmoji = true
 
 [params]
     header_image = "img/home-bg-logo.png"
-    SEOTitle = "Alexandre Alvaro"
-    description = "Pesquisador na HBSIS Ambev em Internet das Coisas e Automação Industrial"
+    SEOTitle = "inteligência das coisas"
+    description = "Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos."
     keyword = "blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics"
     slogan = "o blog"
 
@@ -22,6 +22,8 @@ enableEmoji = true
     omit_categories = false
 
     # Sidebar settings
+    mascot_footer = "img/mascot-2.gif"
+    mascot = "img/mascot.gif"
     sidebar_about_description = "Pesquisador na HBSIS Ambev, Maker, Desenvolvedor, Ilustrador, Violeiro, Entusiasta Open Source e apaixonado por aprender e compartilhar."
     sidebar_avatar = "img/alexandrealvaro.png"
     featured_tags = true
@@ -44,7 +46,7 @@ enableEmoji = true
 
 
 [[params.addtional_menus]]
-    title =  "Alexandre Alvaro"
+    title =  "sobre o autor"
     href =  "https://alexandremendoncaalvaro.github.io/"
 
 [markup]
