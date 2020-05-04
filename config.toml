@@ -5,6 +5,7 @@ languageCode = "pt-br"
 preserveTaxonomyNames = true
 disqusShortname = "inteligenciadascoisas"
 publishDir = "docs"
+enableEmoji = true
 
 [outputs]
     home = ["HTML", "RSS"]

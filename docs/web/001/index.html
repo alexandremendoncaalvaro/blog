@@ -48,6 +48,11 @@
 
     
     <link rel="stylesheet" href="/blog/css/zanshang.css">
+
+
+    
+    <link rel="stylesheet" href="/blog/css/web-post-001.css">
+
     
     
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -143,7 +148,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/blog/img/web-post-1-greensock.png')
+        background-image: url('/blog/img/web-post-001/web-post-1-greensock.png')
     }
 </style>
 <header class="intro-header">
@@ -190,8 +195,26 @@
                     </header>
                     <nav id="TableOfContents">
   <ul>
-    <li><a href="#introdução">Introdução</a></li>
-    <li><a href="#criando-uma-animação-básica">Criando uma animação básica</a></li>
+    <li><a href="#introdução">Introdução</a>
+      <ul>
+        <li><a href="#gif">GIF</a></li>
+        <li><a href="#vetores">Vetores</a></li>
+      </ul>
+    </li>
+    <li><a href="#principais-recursos-de-animação-para-web">Principais recursos de animação para web</a>
+      <ul>
+        <li><a href="#flash-atual-adobe-animate">Flash (atual Adobe Animate)</a></li>
+        <li><a href="#html5-canvas">HTML5 Canvas</a></li>
+        <li><a href="#animações-com-css3">Animações com CSS3</a></li>
+        <li><a href="#javascript-request-animation-frame">javascript Request animation frame</a></li>
+        <li><a href="#lottie-bodymovin">Lottie (Bodymovin’)</a></li>
+        <li><a href="#rive-flare-e-2dimensions">Rive (Flare e 2Dimensions)</a></li>
+        <li><a href="#web-animations-api">Web Animations API</a></li>
+        <li><a href="#gsap">GSAP</a></li>
+      </ul>
+    </li>
+    <li><a href="#criando-uma-animação-com-greensock">Criando uma animação com Greensock</a></li>
+    <li><a href="#considerações-finais">Considerações finais</a></li>
   </ul>
 </nav>
                 
@@ -199,26 +222,104 @@
                 <hr>
 
                 <h1 id="introdução">Introdução</h1>
-<p>As animações na internet se popularizaram bastante desde o surgimento do GIF e do Flash.<br>
-O formato GIF funciona de maneira similar a um vídeo, com uma sequencia de quadros que troca muito rapidamente gerando a ilusão de movimento.</p>
-<h1 id="criando-uma-animação-básica">Criando uma animação básica</h1>
-<p>A seguir vou demonstrar como criar uma animação básica utilizando os recursos da biblioteca GreenSock.</p>
-<p><strong>O vídeo é interativo! Você pode pausar a qualquer momento, mudar o que quiser no código e ver o que acontece.</strong></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe src="https://scrimba.com/c/c2KvV4tN"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="scrimba code"></iframe>
-</div>
-<p>*<a href="https://www.youtube.com/watch?v=02rvd_7HcFY">Clique aqui</a> para ver uma excelente explicação sobre CDN.</p>
+<p>Opa! Tudo belezinha?<br>
+Este é um artigo bem interativo. Fique de olho em cada detalhe para aprender fazendo seus próprios testes! 😄</p>
+<h2 id="gif">GIF</h2>
+<p>As animações na internet se popularizaram bastante desde o surgimento dos GIFs animados.<br>
+O GIF é um formato de arquivo que funciona de maneira similar a um vídeo, com uma sequencia de quadros que troca muito rapidamente gerando a ilusão de movimento.<br>
+Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 cores, o que deixa o arquivo leve, porém bastante limitado.<br>
+Passe o cursor horizontalmente sobre o gif abaixo para controlar a passagem dos quadros:<br>
+<script src="https://captaincodeman.github.io/gif-player/components/webcomponentsjs/webcomponents-hi.js"></script>
+<script src="/blog/js/gif-player.js"></script>
+<gif-player src="https://media.giphy.com/media/TN0GTccRi7Ixa/giphy.gif" speed="0.5" play></gif-player></p>
+<h2 id="vetores">Vetores</h2>
+<p>O uso de formas vetoriais permitiu gerar imagens escaláveis, ou seja, diferentemente dos pixels, os vetores não perdem qualidade quando redimensionados.<br>
+Mova a barra abaixo das imagens para ver o resultado:
 <div id="idyllElement"></div>
 <script src="/blog/js/idyll-embed.min.js"></script>
 <script>
     var element = document.createElement('div');
     document.querySelector("#idyllElement").appendChild(element);
 
-    var idyllMarkup = "\n    # Teste com Idyll\n    [var name:\"x\" value:5 /]\n    O valor de x é [Display value:x format:\"d\" /].\n    [Range value:x min:0 max:10 /]\n";
+    var idyllMarkup = "\n    [var name:\"r\" value:10 /]\n    [div]\n        [inline]\n            [div style:`{width: '200px', height: '200px', background: '#222'}`]\n                [svg width:`200` height:`200`]\n                    [circle r:r cx:r cy:r fill:\"#fff\" /]\n                [/svg]\n            [/div]\n        [/inline]\n        [inline]\n            [div style:`{width: '200px', height: '200px', background: '#222'}`]\n                [div id:'circle-pixel' style:`{width: r * 2, height: r * 2}`]\n                [/div]\n            [/div]\n        [/inline]\n    [/div]\n    [div style:`{width: '400px'}`]\n        [Range value:r min:10 max:100 /]\n    [/div]\n";
 
     Idyll.render(idyllMarkup, element);
-</script>
+</script></p>
+<p>Mova os pontos azuis abaixo (ancoras) para entender melhor como as curvas são calculadas:</p>
+
+
+    <iframe width="100%" height="400" src="https://two.js.org/examples/advanced-anchors.html" frameborder="0"></iframe>
+
+<h1 id="principais-recursos-de-animação-para-web">Principais recursos de animação para web</h1>
+<h2 id="flash-atual-adobe-animate">Flash (atual Adobe Animate)</h2>
+<p>Por muito tempo o plugin do Flash era essencial para acessar diversas páginas. Porém, por conter falhas de segurança ele foi sendo evitado e hoje a Adobe já permite exportar as animações para um Canvas HTML5.<br>
+Por conter um aplicativo com interface gráfica muito eficiente, é excelente para fazer animações, principalmente para uso com uma mesa digitalizadora e renderizando como vídeos, mas ainda não é minha opção preferida para rodar direto na web.<br>
+Dá só uma relebrada nesta clássica animação sobre o Flash feita inteiramente no Flash em 2006:
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb1VvUf21L4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<h2 id="html5-canvas">HTML5 Canvas</h2>
+<p>O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.<br>
+Tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página (DOM).<br>
+Geralmente o carregamento e até a execução ficam um pouco pesados.</p>
+<h3 id="threejs">Three.js</h3>
+<p>Esta biblioteca JS vale ser citada! Ela permite fazer coisas inacreditáveis em conjunto com o WebGL e HTML5 Canvas.<br>
+Dá uma conferida nos exemplos: <a href="https://threejs.org/examples/">https://threejs.org/examples/</a></p>
+<h2 id="animações-com-css3">Animações com CSS3</h2>
+<p>Uma opção também nativa, leve e super performática, porém com opções limitadas, como curvas de movimentação (eases).<br>
+Também não muito amigável para criar os desenhos, mas claro que sempre tem uns caras que dominam com maestria os recursos.<br>
+Dá uma olhada no que esse brasileiro faz com CSS3 Puro:
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6oRr-fvv5z4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<h2 id="javascript-request-animation-frame">javascript Request animation frame</h2>
+<p>Outra opção nativa e utilizada de base por diversas bilbiotecas javascript.<br>
+Com gerenciamento de recursos adaptável ao dispositivo que está sendo utilizado, torna-se uma ótima opção, porém é muito mais fácil de implementar quando usado como recurso uma biblioteca.</p>
+<h2 id="lottie-bodymovin">Lottie (Bodymovin’)</h2>
+<p><a href="https://airbnb.design/lottie/">https://airbnb.design/lottie/</a><br>
+Criado pelo time do airbnb, o Lottie é um plugin para After Effects que permite que suas animações sejam exportadas no formato JSON e lidas por um player javascript.<br>
+Tem alguns poucos bugs e limitações, mas no geral funciona incrivelmente bem!</p>
+<h2 id="rive-flare-e-2dimensions">Rive (Flare e 2Dimensions)</h2>
+<p><a href="https://rive.app/">https://rive.app/</a><br>
+Um pack de duas ferramentas incríveis de animação, recentemente unificada, que utliza o canvas como base e permite criar animações interativas e com recursos bem interessantes, como a deformação de meshes e esqueletos.
+
+
+    <div style="display: inline-block;">
+        <video width="48%" height="100%" loop playsinline autoplay style="border-radius: 10px; " src="https://cdn.2dimensions.com/features/vertex.mp4"></video>
+        <video width="48%" height="100%" loop playsinline autoplay style="border-radius: 10px;" src="https://cdn.2dimensions.com/features/skeletal_flar4.mp4" type="video/mp4"></video>
+    </div>
+</p>
+<p>A melhor opção que conheço para exportar animações para apps com Flutter.</p>
+<h2 id="web-animations-api">Web Animations API</h2>
+<p>Trata-se de um recurso javascript nativo que permite fazer sequencias complexas de animação sem precisar carregar nenhum script externo.<br>
+Porém, além de ser bastante recente e não ter muito suporte, é bem mais limitado do que a biblioteca GASP.</p>
+<h2 id="gsap">GSAP</h2>
+<p><a href="https://greensock.com/">https://greensock.com/</a>
+Green Sock Animation Platform, é esta maravilhosa biblioteca javascript que facilita bastante a animação para web.<br>
+Leve, modular, fácil de ler, segura e bastante robusta. E Além de tudo isso, escolhi adotar como padrão para os meus projetos pela qualidade da documentação oficial e a comunidade bastante ativa.<br>
+Você encontra facilmente respostas bem estruturadas em foruns, exemplos, tutoriais, vídeos e muito material bacana.</p>
+<h1 id="criando-uma-animação-com-greensock">Criando uma animação com Greensock</h1>
+<p>A seguir vou demonstrar como criar uma animação básica utilizando os recursos da biblioteca GreenSock.</p>
+<p><strong>O vídeo é interativo! Você pode pausar a qualquer momento, mudar o que quiser no código e ver o que acontece.</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://scrimba.com/c/c2KvV4tN"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="scrimba code"></iframe>
+</div>
+<p>*<a href="https://www.youtube.com/watch?v=02rvd_7HcFY">Clique aqui</a> para ver uma excelente explicação sobre CDN com a galera do canal Código Fonte TV.</p>
+<h1 id="considerações-finais">Considerações finais</h1>
+<p>Não existe uma unica ferramenta certa para tudo, mas pode ter certeza que pra animações interativas na web, a GASP é facilmente a minha favorita.<br>
+Espero que tenha gostado do conteúdo e interatividade deste artigo! 😊</p>
+<p>Dá uma conferida nesta interface que desenhei para uma aplicação interna para gestão e validação dos scripts SQL na base de teste do nosso time de desenvolvimento.<br>
+Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em conjunto com o meu amigo William Silva.</p>
+<p>Live demo:
+<a href="https://alexandremendoncaalvaro.github.io/Alfred">https://alexandremendoncaalvaro.github.io/Alfred</a><br>
+*Pode usar qualquer valor no usuario e senha.</p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9q9Jo4uhZhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
                 <hr>
