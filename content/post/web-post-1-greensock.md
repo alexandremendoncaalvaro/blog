@@ -76,8 +76,8 @@ Dá só uma relembrada nesta clássica animação sobre o Flash feita inteiramen
 ## HTML5 Canvas
 O HTML5 canvas tem um poder incrível e é um recurso nativo! Podendo ter os elementos acessados por WebGL é capaz de gerar gráficos complexos 2D e 3D dentro de um navegador web compatível sem o uso de plug-ins.  
 Pode ser bastante interativo, usando até recursos como realidade aumentada ou mesmo um jogo completo, mas tudo fica encapsulado dentro do elemento canvas, não sendo a melhor opção para animar os demais elementos da página ([DOM](https://tableless.com.br/entendendo-o-dom-document-object-model/)).  
-Geralmente o carregamento e até a execução ficam um pouco pesados. 
-Até por isso resolvi não incorporar os exemplos diretamente ao artigo.  
+A capa da [página principal do blog]({{< ref "/" >}}) utiliza esse recurso :smile:, mas dependendo do conteúdo o carregamento e a execução ficam um pouco pesados.  
+Até por isso resolvi não incorporar os exemplos mais legais diretamente ao artigo.  
 Dá uma conferida em alguns bem legais neste link: https://www.webfx.com/blog/web-design/examples-html5-canvas/
 
 ### Three.js
