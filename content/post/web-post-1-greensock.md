@@ -27,7 +27,7 @@ As animações na internet se popularizaram bastante desde o surgimento dos GIFs
 O GIF é um formato de arquivo que funciona de maneira similar a um vídeo, com uma sequencia de quadros que troca muito rapidamente gerando a ilusão de movimento.  
 Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 cores, o que deixa o arquivo leve, porém bastante limitado.  
 Passe o cursor horizontalmente sobre o gif abaixo para controlar a passagem dos quadros:  
-{{< gif-player "https://media.giphy.com/media/TN0GTccRi7Ixa/giphy.gif">}}
+{{< gif-player "/blog/img/web-post-001/001.gif">}}
 
 ## Vetores
 O uso de formas vetoriais permitiu gerar imagens escaláveis, ou seja, diferentemente dos pixels, os vetores não perdem qualidade quando redimensionados.  
@@ -49,7 +49,7 @@ Mova a barra abaixo das imagens para ver o resultado:
             [/div]
         [/inline]
     [/div]
-    [div style:`{width: '400px'}`]
+    [div style:`{width: '400px', padding: '10px 100px 10px 100px'}`]
         [Range value:r min:10 max:100 /]
     [/div]
 {{< /idyll >}}
