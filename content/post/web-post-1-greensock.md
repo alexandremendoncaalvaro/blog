@@ -24,7 +24,7 @@ Este é um artigo bem interativo. Fique de olho em cada detalhe para aprender fa
 
 ## GIF
 As animações na internet se popularizaram bastante desde o surgimento dos GIFs animados.  
-O GIF é um formato de arquivo que funciona de maneira similar a um vídeo, com uma sequencia de quadros que troca muito rapidamente gerando a ilusão de movimento.  
+O GIF é um formato de arquivo que funciona de maneira similar a um vídeo, com uma sequencia de quadros que trocam muito rapidamente gerando a ilusão de movimento.  
 Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 cores, o que deixa o arquivo leve, porém bastante limitado.  
 Passe o cursor horizontalmente sobre o gif abaixo para controlar a passagem dos quadros:  
 {{< gif-player "/blog/img/web-post-001/001.gif">}}

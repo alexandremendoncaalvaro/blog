@@ -7,12 +7,14 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
 
+    {{ partial "opengraph.html" .}}
+
     {{ if .Params.thumbnail }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
     <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" />
     {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.header_image }}">
-    <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.header_image }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}" />
     {{ end }}
 
     {{ if .Params.title }}
