@@ -16,7 +16,8 @@ GIF As animações na internet se popularizaram bastante desde o surgimento dos 
 O GIF é um formato de arquivo que funciona de maneira similar a um vídeo, com uma sequencia de quadros que trocam muito rapidamente gerando a ilusão de movimento.
 Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 cores, o que deixa o arquivo leve, porém bastante limitado." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://alexandremendoncaalvaro.github.io/blog/post/web-post-1-greensock/" />
+<meta property="og:url" content="https://alexandremendoncaalvaro.github.io/blog/post/web-post-1-greensock/" /><meta property="article:published_time" content="2020-05-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-04T00:00:00+00:00" />
 
     
     <meta property="og:image" content="https://alexandremendoncaalvaro.github.io/blog/img/web-post-001/thumb.jpg">
@@ -30,9 +31,9 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
     
 
     
-    <meta name="description" content="Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos.">
-    <meta property="og:description" content="Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos." />
-    <meta property="twitter:description" content="Blog de tecnologia aplicada, com tutoriais e artigos práticos e interativos." />
+    <meta name="description" content="Artigo e tutorial interativo sobre animações leves e fáceis para Web utilizando javascript puro, imagens SVG e a biblioteca GreenSock.">
+    <meta property="og:description" content="Artigo e tutorial interativo sobre animações leves e fáceis para Web utilizando javascript puro, imagens SVG e a biblioteca GreenSock." />
+    <meta property="twitter:description" content="Artigo e tutorial interativo sobre animações leves e fáceis para Web utilizando javascript puro, imagens SVG e a biblioteca GreenSock." />
     
 
     
@@ -81,9 +82,6 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
     
     <script src="/blog/js/hux-blog.min.js"></script>
 
-    
-    
-
 </head>
 
 
@@ -94,9 +92,9 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar" style="background-color: #404040;"></span>
-                <span class="icon-bar" style="background-color: #404040;"></span>
-                <span class="icon-bar" style="background-color: #404040;"></span>
+                <span class="icon-bar" style="background-color: #1e2c47;"></span>
+                <span class="icon-bar" style="background-color: #1e2c47;"></span>
+                <span class="icon-bar" style="background-color: #1e2c47;"></span>
             </button>
 
         </div>
@@ -107,14 +105,18 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/blog/" style="color: #404040;">Início</a>
+                        <a href="/blog/" style="color: #1e2c47;">Início</a>
                     </li>
                     
+                        
+                        <li>
+                            <a href="/blog/categories/web" style="color: #1e2c47;">web</a>
+                        </li>
                         
                     
                     
 		    
-                        <li><a href="https://alexandremendoncaalvaro.github.io/" style="color: #404040;">sobre o autor</a></li>
+                        <li><a href="https://alexandremendoncaalvaro.github.io/" style="color: #1e2c47;">sobre o autor</a></li>
                     
 
                     
@@ -168,51 +170,101 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-                        
-                        <a class="tag" href="/blog/tags/web" title="web">
-                            web
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/tutorial" title="tutorial">
-                            tutorial
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/iniciante" title="iniciante">
-                            iniciante
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/anima%C3%A7%C3%B5es" title="animações">
-                            animações
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/svg" title="svg">
-                            svg
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/javascript" title="javascript">
-                            javascript
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/greensock" title="greensock">
-                            greensock
-                        </a>
-                        
-                        <a class="tag" href="/blog/tags/interativo" title="interativo">
-                            interativo
-                        </a>
-                        
-                    </div>
-                    <h1>Animações leves e fáceis para Web</h1>
-                    <h2 class="subheading">Utilizando javascript puro, imagens SVG e a biblioteca GreenSock</h2>
-                    <span class="meta">
-                        Postado por
-                        
-                        Alexandre Alvaro
-                        
-                        em
-                        04 de maio de 2020
-                        
-                    </span>
+  
+  <a class="tag" href="/blog/tags/web" title="web">
+    web
+  </a>
+  
+  <a class="tag" href="/blog/tags/tutorial" title="tutorial">
+    tutorial
+  </a>
+  
+  <a class="tag" href="/blog/tags/iniciante" title="iniciante">
+    iniciante
+  </a>
+  
+  <a class="tag" href="/blog/tags/anima%C3%A7%C3%B5es" title="animações">
+    animações
+  </a>
+  
+  <a class="tag" href="/blog/tags/svg" title="svg">
+    svg
+  </a>
+  
+  <a class="tag" href="/blog/tags/javascript" title="javascript">
+    javascript
+  </a>
+  
+  <a class="tag" href="/blog/tags/greensock" title="greensock">
+    greensock
+  </a>
+  
+  <a class="tag" href="/blog/tags/interativo" title="interativo">
+    interativo
+  </a>
+  
+</div>
+<h1>Animações leves e fáceis para Web</h1>
+<h2 class="subheading">Utilizando javascript puro, imagens SVG e a biblioteca GreenSock</h2>
+
+<div class="post__meta tags">
+  
+  Alexandre Alvaro
+  
+  |
+  
+  
+  04
+
+ de 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+    Maio, 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+2020
+  
+  
+  
+  
+  
+  em
+  
+  
+  <a class="tag" href="/blog/categories/web">WEB</a>
+  
+  
+  
+  
+
+  <br />
+  <i class="fa fa-clock-o"></i> 5 min de leitura
+</div>
+
                 </div>
             </div>
         </div>
@@ -280,7 +332,11 @@ Passe o cursor horizontalmente sobre o gif abaixo para controlar a passagem dos 
 <p>O uso de formas vetoriais permitiu gerar imagens escaláveis, ou seja, diferentemente dos pixels, os vetores não perdem qualidade quando redimensionados.<br>
 Mova a barra abaixo das imagens para ver o resultado:
 <div id="idyllElement"></div>
+
+
 <script src="/blog/js/idyll-embed.min.js"></script>
+
+
 <script>
     var element = document.createElement('div');
     document.querySelector("#idyllElement").appendChild(element);
@@ -377,76 +433,75 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
                 <hr>
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
 
-                <ul class="list-inline ">
-                    <li><b>Compartilhar publicação: </b></li>
-                    <li>
-                        <a href="javascript:;" 
-                        onclick="window.open('http://www.facebook.com/share.php?href=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/', 'sharer', 'width=626,height=436');">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" 
-                        onclick="window.open('http://twitter.com/share?text=Animações leves e fáceis para Web&url=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/&hashtags=web,tutorial,iniciante,animações,svg,javascript,greensock,interativo');">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" 
-                        onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/ &title=Animações leves e fáceis para Web &summary=Utilizando javascript puro, imagens SVG e a biblioteca GreenSock&source=inteligencia-das-coisas');">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" 
-                        onclick="window.open('mailto:?&body=Olha que interessante este artigo: https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/&subject=Artigo: Animações leves e fáceis para Web - Utilizando javascript puro, imagens SVG e a biblioteca GreenSock');">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="list-inline ">
+    <li><b>Compartilhar publicação: </b></li>
+    <li>
+        <a href="javascript:;"
+            onclick="window.open('http://www.facebook.com/share.php?href=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/', 'sharer', 'width=626,height=436');">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;"
+            onclick="window.open('http://twitter.com/share?text=Animações leves e fáceis para Web&url=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/&hashtags=web,tutorial,iniciante,animações,svg,javascript,greensock,interativo');">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;"
+            onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/ &title=Animações leves e fáceis para Web &summary=Utilizando javascript puro, imagens SVG e a biblioteca GreenSock&source=inteligencia-das-coisas');">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;"
+            onclick="window.open('mailto:?&body=Olha que interessante este artigo: https:\/\/alexandremendoncaalvaro.github.io\/blog\/post\/web-post-1-greensock\/&subject=Artigo: Animações leves e fáceis para Web - Utilizando javascript puro, imagens SVG e a biblioteca GreenSock');">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </li>
+</ul>
 
                 <hr>
                 <ul class="pager">
@@ -699,6 +754,8 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
 
 
+    
+    
 </body>
 
 </html>

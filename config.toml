@@ -1,6 +1,6 @@
 baseURL = "https://alexandremendoncaalvaro.github.io/blog/"
 title = "inteligência das coisas"
-theme =  "cleanwhite"
+theme =  "hugo-theme-cleanwhite"
 languageCode = "pt-br"
 preserveTaxonomyNames = true
 disqusShortname = "inteligenciadascoisas"
@@ -30,7 +30,7 @@ enableEmoji = true
     sidebar_avatar = "img/alexandrealvaro.png"
     featured_tags = true
     featured_condition_size = 1 
-    #custom_js = ["js/idyll-embed.min.js"]
+    #custom_js = [""]
     
     about_me = true
 

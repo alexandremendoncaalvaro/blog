@@ -1,5 +1,9 @@
 <div id="idyllElement"></div>
-<script src="/blog/js/idyll-embed.min.js"></script>
+
+{{ with "js/idyll-embed.min.js" }}
+<script src="{{ . | relURL }}"></script>
+{{ end }}
+
 <script>
     var element = document.createElement('div');
     document.querySelector("#idyllElement").appendChild(element);
