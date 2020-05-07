@@ -37,6 +37,7 @@ enableEmoji = true
 
 [params.social]
     rss             = false 
+    resume          = "https://alexandremendoncaalvaro.github.io"
     email           = "alexandre.alvaro@hotmail.com"
     facebook        = "https://www.facebook.com/peritto"
     linkedin        = "https://www.linkedin.com/in/alexandre-mendon%C3%A7a-%C3%A1lvaro-273b0050"

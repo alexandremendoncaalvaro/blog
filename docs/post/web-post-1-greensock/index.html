@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165857578-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165857578-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,15 +49,15 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
     
     
 
-    <meta name="keyword"  content="blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics">
+    <meta name="keyword" content="blog, iot, internet das coisas, desenvolvimento, frontend, algoritmos, eletrônica, embarcados, protótipos, visão computacional, automação, design, motion graphics">
     <link rel="shortcut icon" href="/blog/img/favicon.ico">
 
     <title>Animações leves e fáceis para Web-inteligência das coisas</title>
 
     <link rel="canonical" href="/blog/blog/post/web-post-1-greensock/">
 
-    <link rel="stylesheet" href="/blog/css/iDisqus.min.css"/>
-	
+    <link rel="stylesheet" href="/blog/css/iDisqus.min.css" />
+
     
     <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
 
@@ -65,9 +73,10 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
 
     <link rel="stylesheet" href="/blog/css/my.css">
 
+
     
-    
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
 
     
     
@@ -75,16 +84,14 @@ Cada quadro é uma imagem Bitmap (formada por pixels) e tem um máximo de 256 co
     
     
     <script src="/blog/js/jquery.min.js"></script>
-    
+
     
     <script src="/blog/js/bootstrap.min.js"></script>
-    
+
     
     <script src="/blog/js/hux-blog.min.js"></script>
 
 </head>
-
-
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -596,7 +603,17 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     
                     
                     <li>
-                        <a href="mailto:alexandre.alvaro@hotmail.com">
+                        <a href='https://alexandremendoncaalvaro.github.io' title="Resume/ Portifolio" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="mailto:alexandre.alvaro@hotmail.com"  title="e-mail">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -607,11 +624,8 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
 
                     
                     
-                    
-
-                    
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/peritto">
+                        <a target="_blank" href="https://www.facebook.com/peritto"  title="Facebook">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -619,12 +633,9 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                         </a>
                     </li>
                     
-
-                    
-                    
                     
                     <li>
-                        <a target="_blank" href="https://github.com/alexandremendoncaalvaro">
+                        <a target="_blank" href="https://github.com/alexandremendoncaalvaro"  title="Github">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -636,7 +647,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     
                     
                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/alexandre-mendon%C3%A7a-%C3%A1lvaro-273b0050">
+                        <a target="_blank" href="https://www.linkedin.com/in/alexandre-mendon%C3%A7a-%C3%A1lvaro-273b0050"  title="Linkedin">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -652,7 +663,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     
                     
                     <li>
-                        <a target="_blank" href="https://www.instagram.com/alemendalvaro">
+                        <a target="_blank" href="https://www.instagram.com/alemendalvaro"  title="Instagram">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -663,7 +674,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     
                     
                     <li>
-                        <a target="_blank" href="https://www.deviantart.com/peritto/gallery">
+                        <a target="_blank" href="https://www.deviantart.com/peritto/gallery" title="DeviantArt">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
@@ -673,7 +684,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     
                     
                     <li>
-                        <a target="_blank" href="https://soundcloud.com/peritto-1">
+                        <a target="_blank" href="https://soundcloud.com/peritto-1"  title="Soundcloud">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
@@ -683,7 +694,7 @@ Esta é apenas uma demonstração do FrontEnd, a solução completa foi feita em
                     
                     
                     <li>
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5547991512508&amp;amp;text=Site">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5547991512508&amp;amp;text=Site"  title="Whatsapp">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>

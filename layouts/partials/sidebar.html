@@ -11,7 +11,7 @@
         <h5><a href="{{ "https://alexandremendoncaalvaro.github.io/blog" | relLangURL }}">SOBRE O BLOG</a></h5>
         <div class="short-about">
             {{ with .Site.Params.mascot }}
-                <img src="{{ . | relURL }}" alt="ia" style="width: 60%;" />
+            <img src="{{ . | relURL }}" alt="ia" style="width: 60%;" />
             {{ end }}
             <b>{{ .Site.Params.SEOTitle }}</b>
             {{ with .Site.Params.description }}
@@ -54,16 +54,6 @@
             {{ end }}
             <!-- SNS Link -->
             <ul class="list-inline">
-                {{ with .Site.Params.social.email }}
-                <li>
-                    <a href="mailto:{{ . }}">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                {{ end }}
                 {{ if .Site.Params.social.rss }}
                 <li>
                     <a href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="alternate"
@@ -75,9 +65,30 @@
                     </a>
                 </li>
                 {{ end }}
+                {{ with .Site.Params.social.resume }}
+                <li>
+                    <a href='{{ . }}' title="Resume/ Portifolio" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.social.email }}
+                <li>
+                    <a href="mailto:{{ . }}" title="e-mail">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                {{ end }}
+
                 {{ with .Site.Params.social.twitter }}
                 <li>
-                    <a href="{{ . }}">
+                    <a href="{{ . }}" title="Twitter">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -85,29 +96,9 @@
                     </a>
                 </li>
                 {{ end }}
-                {{ with .Site.Params.social.zhihu }}
-                <li>
-                    <a target="_blank" href="{{ . }}">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                        </span>
-                    </a>
-                </li>
-                {{ end }}
-                {{ with .Site.Params.social.weibo }}
-                <li>
-                    <a target="_blank" href="{{ . }}">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                {{ end }}
                 {{ with .Site.Params.social.facebook }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="Facebook">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -115,19 +106,9 @@
                     </a>
                 </li>
                 {{ end }}
-                {{ with .Site.Params.social.wechat }}
-                <li>
-                    <a target="_blank" href="{{ . | relURL}}">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                {{ end }}
                 {{ with .Site.Params.social.github }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="Github">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -157,7 +138,7 @@
                 {{ end }}
                 {{ with .Site.Params.social.linkedin }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="Linkedin">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -227,7 +208,7 @@
                 {{ end }}
                 {{ with .Site.Params.social.instagram }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="Instagram">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -247,7 +228,7 @@
                 {{ end }}
                 {{ with .Site.Params.social.deviantart }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="DeviantArt">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
@@ -257,7 +238,7 @@
                 {{ end }}
                 {{ with .Site.Params.social.soundcloud }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="Soundcloud">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
@@ -267,7 +248,7 @@
                 {{ end }}
                 {{ with .Site.Params.social.whatsapp }}
                 <li>
-                    <a target="_blank" href="{{ . }}">
+                    <a target="_blank" href="{{ . }}" title="Whatsapp">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
