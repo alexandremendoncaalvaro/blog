@@ -1,12 +1,12 @@
 ---
 layout:         post 
-title:          "Porque usar botão com resitor no Arduino?"
+title:          "Utilizando botão de forma correta com Arduino"
 subtitle:       "O que é, e pra que serve o input pull-up?"
 description:    "Artigo explicando porque se deve utilizar um resistor ao ligar um botão ao Arduino (input pull-up)."
 date:           2020-05-17
 author:         "Alexandre Alvaro"
 image:          "img/arduino-post-001/arduino-post-1-pullup.jpg"
-thumbnail:      "img/arduino-post-001/arduino-post-1-pullup.jpg"
+thumbnail:      "img/arduino-post-001/thumb.jpg"
 categories:     [ Arduino ]
 tags:
                 - arduino

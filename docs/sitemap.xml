@@ -43,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-pullup/</loc>
-    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://alexandremendoncaalvaro.github.io/blog/post/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
@@ -64,6 +59,11 @@
   
   <url>
     <loc>https://alexandremendoncaalvaro.github.io/blog/tags/tutorial/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-pullup/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
