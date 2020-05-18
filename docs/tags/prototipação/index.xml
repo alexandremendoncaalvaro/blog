@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prototipação on inteligência das coisas</title>
+    <link>https://alexandremendoncaalvaro.github.io/blog/tags/prototipa%C3%A7%C3%A3o/</link>
+    <description>Recent content in prototipação on inteligência das coisas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://alexandremendoncaalvaro.github.io/blog/tags/prototipa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Porque usar botão com resitor no Arduino?</title>
+      <link>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-pullup/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-pullup/</guid>
+      <description>Introdução Este artigo parte do princípio que você já começou a fazer alguns experimentos com Arduino.
+Se você não conhece nada sobre Arduino, dá uma olhada neste material sensacional sobre o assunto no Manual do Mundo.
+  Placa Arduino Uno. Clique sobre os números para ver o nome do componente.
+ Botão Imagine que eu tenho uma lâmpada ligada a uma bateria através de fios. Se eu cortar um desses fios, interrompendo a passagem de energia, consequentemente a lâmpada irá apagar.</description>
+    </item>
+    
+  </channel>
+</rss>
