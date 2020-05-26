@@ -18,6 +18,7 @@ tags:
                 - interativo
 ---
 
+**Para fazer um aproveitamento total dos recursos interativos, acesse pelo computador :smile:**
 
 # Introdução
 Este artigo parte do princípio que você já começou a fazer alguns experimentos com Arduino.  
@@ -61,7 +62,7 @@ No circuito abaixo segure o Botão para enviar 5 Volts pressionado por alguns in
 
 **Para funcionar, clique em Iniciar simulação:**
 {{< rawhtml >}}
-    <iframe width="100%" height="400" src="https://www.tinkercad.com/embed/lXHLrQseyzi" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <iframe width="100%" height="453" src="https://www.tinkercad.com/embed/lXHLrQseyzi?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 {{< /rawhtml >}}
 > Se preferir ajuste o Zoom com a roda do mouse
 
@@ -81,7 +82,7 @@ Observe que mesmo quando o botão está aberto, o circuito como um todo está se
 
 **Para funcionar, clique em Iniciar simulação:**
 {{< rawhtml >}}
-    <iframe width="100%" height="400" src="https://www.tinkercad.com/embed/baQQc3kwZ5v" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <iframe width="100%" height="453" src="https://www.tinkercad.com/embed/baQQc3kwZ5v?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 {{< /rawhtml >}}
 > Se preferir ajuste o Zoom com a roda do mouse
 
