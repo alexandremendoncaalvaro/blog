@@ -6,18 +6,20 @@
     <description>Recent content in intermediário on inteligência das coisas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexandremendoncaalvaro.github.io/blog/tags/intermedi%C3%A1rio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Porque usar botão com resitor?</title>
-      <link>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-pullup/</link>
-      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <title>O Arduino Uno tem 2 microcontroladores!</title>
+      <link>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-hoodloader/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-pullup/</guid>
-      <description></description>
+      <guid>https://alexandremendoncaalvaro.github.io/blog/post/arduino-post-1-hoodloader/</guid>
+      <description>Introdução O Arduino é uma plataforma de eletrônica de baixo custo, open source, baseada em hardware e software fáceis de usar.
+As placas do Arduino são capazes de ler entradas - luz em um sensor, um dedo em um botão, uma mensagem no Twitter - e transformá-las em uma saída - ativando um motor, ligando um LED, publicando algo online.
+Por padrão, a programação é feita utilizando uma linguagem baseada em C/C++, sem a necessidade de equipamentos extras além de um cabo USB.</description>
     </item>
     
   </channel>
